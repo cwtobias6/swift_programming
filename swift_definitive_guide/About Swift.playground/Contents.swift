@@ -54,6 +54,8 @@ case "celery":
     print("Add some raisins and make ants on a log.")
 case "cucumber":
     print ("That would make a good tea sandwhich.")
+case let x where x.hasSuffix("pepper"):
+    print("Is it a spicy \(x)?")
 default:
     print("Everything tastes good in soup")
 }
