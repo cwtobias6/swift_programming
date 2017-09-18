@@ -102,6 +102,86 @@ func avgOf(numbers: Int...) -> Int {
 
 avgOf(numbers: 10,20)
 
+// Classes
+
+class NamedShape {
+    
+    var numberOfSides: Int = 0
+    
+    var name: String
+    
+    init(name: String = "Nameless Shape") {
+        self.name = name
+    }
+    
+    func simpleDescription() -> String {
+        return "A \(name) with \(numberOfSides) sides."
+        
+    }
+    
+    
+}
+
+var shape = NamedShape()
+
+print(shape.simpleDescription())
+
+// Class initialize function and Inheritance
+class Square: NamedShape {
+    
+    var sideLength: Double
+    
+    init(sideLength: Double, name: String) {
+        self.sideLength = sideLength
+        super.init(name: name)
+        numberOfSides = 4
+    }
+    
+    func area() -> Double {
+        return sideLength * sideLength
+    }
+    
+    override func simpleDescription() -> String {
+        return "A Square with sides of length \(sideLength)."
+    }
+    
+}
+
+let test = Square(sideLength: 2.3, name: "A test square")
+
+test.area()
+test.simpleDescription()
+
+class Circle: NamedShape {
+    
+    var radius: Double
+    
+    init(radius: Double, name: String) {
+        self.radius = radius
+        super.init(name: name)
+        numberOfSides = 0
+    }
+    
+    func area() -> Double {
+        return radius * radius * Double.pi
+    }
+    
+    override func simpleDescription() -> String {
+        return "A Cirlce with a radius of \(radius)."
+    }
+    
+}
+
+var miniCircle = Circle(radius: 3.5, name: "A Mini Circle")
+
+miniCircle.area()
+miniCircle.simpleDescription()
+
+
+
+
+
+
 
 
 
