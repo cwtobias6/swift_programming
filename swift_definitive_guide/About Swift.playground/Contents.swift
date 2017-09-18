@@ -60,7 +60,7 @@ default:
     print("Everything tastes good in soup")
 }
 
-// Functions 
+// Functions and Closures
 
 
 
