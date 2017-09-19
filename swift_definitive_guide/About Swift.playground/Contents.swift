@@ -47,7 +47,7 @@ let fullName = "John Appleseed"
 
 let informalGreeting = "Hi \(nickName ?? fullName)"
 
-let vegtable = "Red pepper"
+let vegtable = "Red And Green pepper"
 
 switch vegtable {
 case "celery":
@@ -59,6 +59,15 @@ case let x where x.hasSuffix("pepper"):
 default:
     print("Everything tastes good in soup")
 }
+
+var n = 2
+
+while n < 100 {
+    n *= 100
+}
+
+print(n)
+
 
 
 
