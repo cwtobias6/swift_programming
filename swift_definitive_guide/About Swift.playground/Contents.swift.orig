@@ -47,7 +47,7 @@ let fullName = "John Appleseed"
 
 let informalGreeting = "Hi \(nickName ?? fullName)"
 
-let vegtable = "Red pepper"
+let vegtable = "Red And Green pepper"
 
 switch vegtable {
 case "celery":
@@ -60,6 +60,15 @@ default:
     print("Everything tastes good in soup")
 }
 
+<<<<<<< HEAD
+var n = 2
+
+while n < 100 {
+    n *= 100
+}
+
+print(n)
+=======
 // Functions and Closures
 
 func greet(person: String, day: String) -> String {
@@ -210,6 +219,7 @@ let aceRawValue = ace.rawValue
 
 
 
+>>>>>>> 6b74a3faeeb9cb480e53415367fb380d249f2373
 
 
 
