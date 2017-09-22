@@ -692,6 +692,9 @@
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
+                                <connections>
+                                    <action selector="speakButtonClicked:" target="XfG-lQ-9wD" id="S0V-vT-nXv"/>
+                                </connections>
                             </button>
                             <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="NLS-cx-qZD">
                                 <rect key="frame" x="312" y="222" width="69" height="32"/>
@@ -699,6 +702,9 @@
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
+                                <connections>
+                                    <action selector="stopButtonClicked:" target="XfG-lQ-9wD" id="vVy-lc-ro1"/>
+                                </connections>
                             </button>
                             <scrollView horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" hasHorizontalScroller="NO" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6m9-O3-G21">
                                 <rect key="frame" x="0.0" y="0.0" width="480" height="204"/>
@@ -738,6 +744,9 @@
                             <constraint firstAttribute="trailing" secondItem="6m9-O3-G21" secondAttribute="trailing" id="sUN-Yt-vmy"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="textView" destination="fF4-Ns-146" id="D6w-DN-UwA"/>
+                    </connections>
                 </viewController>
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>

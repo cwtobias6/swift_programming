@@ -9,17 +9,20 @@
 import Cocoa
 
 class ViewController: NSViewController {
-
+    
+    let speechSynthesizer = NSSpeechSynthesizer()
+    
     @IBOutlet var textView: NSTextView!
     
     @IBAction func speakButtonClicked(_ sender: NSButton) {
-        print("The speak button was clicked")
+        if let contents = textView.string, !contents.isEmpty {
+            speechSynthesizer.startSpeaking(contents)
+        } else {
+            speechSynthesizer.startSpeaking("The document is empty.")
+        }
     }
     
     @IBAction func stopButtonClicked(_ sender: NSButton) {
-        print("The stop button was clicked")
+        speechSynthesizer.stopSpeaking()
     }
-
-
 }
-
