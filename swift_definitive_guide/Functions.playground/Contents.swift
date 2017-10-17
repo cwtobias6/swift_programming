@@ -15,7 +15,7 @@ func printAndCount(string:String) -> Int {
     return string.count
 }
 
-printAndCount(string: "Chicken Wings")
+printAndCount(string: "Everyone")
 
 // Functions with multiple returns, return tuples
 
@@ -33,3 +33,32 @@ func minMax(array: [Int]) -> (min: Int, max: Int) {
 }
 
 minMax(array: [1,2,3,4,5,6,7])
+
+// no input parameters
+func sayHelloWorld() -> String {
+    return "Hello World!"
+}
+
+print(sayHelloWorld())
+
+// Multiple Parameters
+
+func greetAnother(person: String, again: Bool) -> String {
+    if again == true {
+        return "Hello again, " + person
+    } else {
+        return "Hello, " + person
+    }
+}
+
+print(greetAnother(person: "Matt", again: true))
+
+
+
+
+
+
+
+
+
+
