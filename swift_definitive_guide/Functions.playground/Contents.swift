@@ -67,7 +67,29 @@ func omitThis(_ label : String) {
 
 omitThis("Omitted label")
 
-// Variadic Parameters 
+/*  In-Out Parameters
+ 
+ If you want a function to modify a parameter’s value, and you want those changes to persist after the function call has ended, define that parameter as an in-out parameter instead.
+ 
+ */
+
+func swapInts(a: inout Int, b: inout Int) {
+    let aIsNowB = a
+    
+    a = b
+    
+    b = aIsNowB
+    
+}
+
+var someInt: Int = 100
+
+var anotherInt: Int = 1
+
+swapInts(a: &someInt, b: &anotherInt)
+
+print(someInt)
+print(anotherInt)
 
 
 
