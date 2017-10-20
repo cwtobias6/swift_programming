@@ -53,8 +53,21 @@ func greetAnother(person: String, again: Bool) -> String {
 
 print(greetAnother(person: "Matt", again: true))
 
+// Argument labels
+func thisIsAnExample(ofAnArgumentLabel label : String ) {
+    print(label)
+}
 
+thisIsAnExample(ofAnArgumentLabel: "Do you see what I mean?")
 
+// Omitting argument labels
+func omitThis(_ label : String) {
+    print(label)
+}
+
+omitThis("Omitted label")
+
+// Variadic Parameters 
 
 
 
