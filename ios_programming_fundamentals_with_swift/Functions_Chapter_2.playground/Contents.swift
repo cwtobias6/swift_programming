@@ -11,6 +11,7 @@ func echoString(_ s:String, times:Int) -> String {
 let stringy = echoString("hi ", times:3)
 
 // Function overloading
+// Two functions with similar names, but different parameter types means they can coexist
 func say (_ what:String) {
 }
 func say (_ what:Int) {
@@ -47,3 +48,7 @@ func removeCharacter(_ c:Character, from s: inout String) -> Int {
 var hello = "hello"
 let result2 = removeCharacter("l", from:&hello)
 print(hello) // prints "heo"
+
+
+
+
