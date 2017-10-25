@@ -49,6 +49,14 @@ var hello = "hello"
 let result2 = removeCharacter("l", from:&hello)
 print(hello) // prints "heo"
 
+// Variadic parameters
 
+func variadicParameters (_ lotsOfNumbers: Int ...) {
+    for number in lotsOfNumbers {
+        print(number)
+    }
+    
+}
 
+variadicParameters(2,3,4,5,6)
 
