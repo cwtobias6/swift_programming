@@ -60,3 +60,5 @@ func variadicParameters (_ lotsOfNumbers: Int ...) {
 
 variadicParameters(2,3,4,5,6)
 
+
+
