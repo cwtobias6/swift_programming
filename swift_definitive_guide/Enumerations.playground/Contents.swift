@@ -23,6 +23,10 @@ default:
     print("You're going in the wrong direction.")
 }
 
+enum Planet {
+    case mercury, venus, earth, mars, jupiter, saturn, uranus, neptune
+}
+
 enum ConnectionState: Int {
     case Unknown = -1
     case Disconnected
