@@ -18,8 +18,11 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4CP-9G-TXD">
-                                <rect key="frame" x="164.5" y="559" width="46" height="30"/>
+                                <rect key="frame" x="147.5" y="559" width="80" height="30"/>
                                 <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="CfB-w4-xjI"/>
+                                </constraints>
                                 <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <state key="normal" title="Button"/>
                                 <connections>
@@ -27,7 +30,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pvd-iH-eeG">
-                                <rect key="frame" x="164.5" y="629" width="46" height="30"/>
+                                <rect key="frame" x="147.5" y="629" width="80" height="30"/>
                                 <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <state key="normal" title="Button"/>
@@ -39,6 +42,7 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Pvd-iH-eeG" secondAttribute="bottom" constant="8" id="5AT-l9-8Ga"/>
+                            <constraint firstItem="Pvd-iH-eeG" firstAttribute="width" secondItem="4CP-9G-TXD" secondAttribute="width" id="B2l-NC-2HJ"/>
                             <constraint firstItem="Pvd-iH-eeG" firstAttribute="centerX" secondItem="4CP-9G-TXD" secondAttribute="centerX" id="jwd-CT-fr3"/>
                             <constraint firstItem="Pvd-iH-eeG" firstAttribute="top" secondItem="4CP-9G-TXD" secondAttribute="bottom" constant="40" id="sCu-Sy-GPM"/>
                             <constraint firstItem="Pvd-iH-eeG" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="tq3-YL-NxZ"/>
