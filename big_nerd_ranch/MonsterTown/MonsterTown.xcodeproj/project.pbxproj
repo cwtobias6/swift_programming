@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		DC68F1571FBBA52300459FAF /* Town.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC68F1561FBBA52300459FAF /* Town.swift */; };
+		DC68F1591FBBA88700459FAF /* Monster.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC68F1581FBBA88700459FAF /* Monster.swift */; };
+		DC68F15B1FBBB30700459FAF /* Zombie.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC68F15A1FBBB30700459FAF /* Zombie.swift */; };
 		DC84FC0C1FA8D8AE00A6BE2D /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC84FC0B1FA8D8AE00A6BE2D /* main.swift */; };
 /* End PBXBuildFile section */
 
@@ -25,6 +27,8 @@
 
 /* Begin PBXFileReference section */
 		DC68F1561FBBA52300459FAF /* Town.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Town.swift; sourceTree = "<group>"; };
+		DC68F1581FBBA88700459FAF /* Monster.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Monster.swift; sourceTree = "<group>"; };
+		DC68F15A1FBBB30700459FAF /* Zombie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Zombie.swift; sourceTree = "<group>"; };
 		DC84FC081FA8D8AE00A6BE2D /* MonsterTown */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = MonsterTown; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC84FC0B1FA8D8AE00A6BE2D /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -60,6 +64,8 @@
 			isa = PBXGroup;
 			children = (
 				DC84FC0B1FA8D8AE00A6BE2D /* main.swift */,
+				DC68F15A1FBBB30700459FAF /* Zombie.swift */,
+				DC68F1581FBBA88700459FAF /* Monster.swift */,
 				DC68F1561FBBA52300459FAF /* Town.swift */,
 			);
 			path = MonsterTown;
@@ -124,6 +130,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				DC84FC0C1FA8D8AE00A6BE2D /* main.swift in Sources */,
+				DC68F15B1FBBB30700459FAF /* Zombie.swift in Sources */,
+				DC68F1591FBBA88700459FAF /* Monster.swift in Sources */,
 				DC68F1571FBBA52300459FAF /* Town.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
